@@ -1,6 +1,6 @@
 #### to-be-renamed
 =============
-###Teamwork Project Assignment for the <a href="https://softuni.bg/trainings/coursesinstances/details/11">JavaScript Applications Course</a> @ <a href="www.softuni.bg>SoftUni</a>
+Teamwork Project Assignment for the <a href="https://softuni.bg/trainings/coursesinstances/details/11">JavaScript Applications Course</a> @ [SoftUni](https://softuni.bg)
 
 Design and implement a **Blog / Forum / Photo Album / Audio Album using JavaScript, jQuery, AJAX, REST**. Your project must meet all the requirements listed below.
 
