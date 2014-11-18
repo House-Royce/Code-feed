@@ -108,7 +108,7 @@ Please be **strict in timing**! On the 10th minute you **will be interrupted**! 
 Be **well prepared** for presenting maximum of your work for minimum time. Bring your own laptop. Test it preliminary with the multimedia projector. Open the project assets beforehand to save time.
 
 ##Assessment Criteria
-*	**Functionalit**y (all the required functionalities according to the type of project you choose) – 0…7
+*	**Functionality** (all the required functionalities according to the type of project you choose) – 0…7
 *	Correct use of **AJAX, REST and JSON** for accessing the server-side data – 0…3
 *	**Code quality** (well-structured code, split into modules and files, good naming, formatting, etc.) – 0…5
 *	**Security** (correct data validation, absence of cross-site scripting / unescaped data in the UI, etc.) – 0…2
