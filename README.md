@@ -4,6 +4,20 @@ Teamwork Project Assignment for the <a href="https://softuni.bg/trainings/course
 
 Design and implement a **Blog / Forum / Photo Album / Audio Album using JavaScript, jQuery, AJAX, REST**. Your project must meet all the requirements listed below.
 
+### Forum
+**Required** functionalities:
+*	**View** all questions / categories (optionally with paging).
+*	Implement a simple **registration** for forum users.
+*	Adding **new question** by the forum users. Each question must have **tags** and **category**.
+*	Implement **categories** for the forum questions.
+*	Adding **answers** to the questions by the forum visitors – each visitor must fill out his name, email (optionally) and comment text.
+*	**Counter** for visits for each question.
+
+**Optional** functionalities:
+*	**Admin panel**: add /edit /delete forum posts, tags, answers, categories.
+*	Functionality for **searching** by question, answer and tags.
+*	Implement **ranking** according to user activity.
+
 ##Requirements
 *	Use **JavaScript, jQuery and AJAX** – the major part of your work should be JavaScript written by your team
   *	**Front-end:** use **HTML5, CSS3** to create the content and to style your Web application
@@ -29,23 +43,6 @@ You should **write your application from scratch**. You are **not allowed** to u
 *	Existing projects and frameworks like CMS systems, forum systems, photo album systems, etc.
 *	Single Page Apps frameworks like AngularJS, Backbone, Ember, etc.
 *	JavaScript APIs for accessing the server-side data. **Use REST, JSON and AJAX calls**.
-
-## Projects
-Please choose one of the projects below.
-
-### Forum
-**Required** functionalities:
-*	**View** all questions / categories (optionally with paging).
-*	Implement a simple **registration** for forum users.
-*	Adding **new question** by the forum users. Each question must have **tags** and **category**.
-*	Implement **categories** for the forum questions.
-*	Adding **answers** to the questions by the forum visitors – each visitor must fill out his name, email (optionally) and comment text.
-*	**Counter** for visits for each question.
-
-**Optional** functionalities:
-*	**Admin panel**: add /edit /delete forum posts, tags, answers, categories.
-*	Functionality for **searching** by question, answer and tags.
-*	Implement **ranking** according to user activity.
 
 ##Deliverables
 Put the following in a **ZIP archive** and submit it (each team member submits the same file):
