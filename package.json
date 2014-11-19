@@ -1,0 +1,23 @@
+{
+  "name": "code-feed",
+  "version": "0.0.1",
+  "description": "JavaScript teamwork project - web app for code review and feedback",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/House-Royce/Code-feed.git"
+  },
+  "author": "House Royce",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/House-Royce/Code-feed/issues"
+  },
+  "homepage": "https://github.com/House-Royce/Code-feed",
+  "dependencies": {
+    "express": "^4.10.2",
+    "jQuery": "^1.7.4"
+  }
+}
