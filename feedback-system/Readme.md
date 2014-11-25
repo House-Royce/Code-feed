@@ -17,7 +17,7 @@ npm install
 
 **Start** the **server** in debug mode
 ```
-DEBUG=feedback-system ./server/www
+DEBUG=feedback-system ./bin/www
 ```
 
 Open the **browser** at
