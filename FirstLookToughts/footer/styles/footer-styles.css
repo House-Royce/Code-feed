@@ -1,0 +1,32 @@
+﻿footer {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 20px;
+    background: #2c3e50;
+    color: #ffffff;
+    font-size: 11px
+}
+
+    footer ul {
+        list-style-type: none;
+        margin-left: -40px;
+    }
+
+    footer a:hover,
+    footer a:focus {
+        text-decoration: none;
+        color: #15a589;
+    }
+
+    footer a {
+        color: #ffffff;
+    }
+
+.footer-logo {
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    padding: 2px;
+}
