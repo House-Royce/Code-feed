@@ -1,16 +1,25 @@
+require('./config/mongoose')();
+
 var express = require('express'),
     path = require('path'),
-    favicon = require('serve-favicon'),
+    //favicon = require('serve-favicon'),
     logger = require('morgan'),
     cookieParser = require('cookie-parser'),
     bodyParser = require('body-parser'),
     exphbs  = require('express3-handlebars');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
+var usersRoute = require('./routes/users');
 
 var app = express(),
     hbs = exphbs.create( /*config options eventually*/);
+
+var //Forum = require('mongoose').model('forum'),
+    Comment = require('mongoose').model('comments'),
+    Snippet = require('mongoose').model('snippets');
+    //Question = require('mongoose').model('questions'),
+    //Category = require('mongoose').model('categories'),
+    //User = require('mongoose').model('users');
 
 // view engine setup
 app.engine('handlebars', hbs.engine);
@@ -25,7 +34,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
+app.use('/usersRoute', usersRoute);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -59,4 +68,5 @@ app.use(function(err, req, res, next) {
 });
 
 
+app.listen(3000);
 module.exports = app;
