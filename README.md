@@ -1,4 +1,4 @@
-#### to-be-renamed
+#### Code Review Project
 =============
 Teamwork Project Assignment for the <a href="https://softuni.bg/trainings/coursesinstances/details/11">JavaScript Applications Course</a> @ [SoftUni](https://softuni.bg)
 

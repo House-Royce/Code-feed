@@ -11,7 +11,7 @@
 *.sublime-workspace
 nbproject
 Thumbs.db
-*.dot
+*.dat
 
 # Folders to ignore
 node_modules
