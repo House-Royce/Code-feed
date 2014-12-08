@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>CodeReview</Name>
+    <RootNamespace>CodeReview</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>0732c9bc-895e-4ba5-ae0c-e5dc1976b2ba</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="bootstrap\js\bootstrap.js" />
+    <Compile Include="bootstrap\js\bootstrap.min.js" />
+    <Compile Include="includes\js\jquery-1.8.2.min.js" />
+    <Compile Include="includes\js\modernizr-2.6.2.min.js" />
+    <Compile Include="includes\js\script.js" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="forms\form.njsproj" />
+    <Content Include="forms\formAskQuestion.html" />
+    <Content Include="forms\formLogin.html" />
+    <Content Include="forms\formRegister.html" />
+    <Content Include="forms\styles\bootstrap.css" />
+    <Content Include="forms\styles\bootstrap.min.css" />
+    <Content Include="forms\styles\form-style.css" />
+    <Content Include="images\logo-nobckgrnd.png" />
+    <Content Include="images\logo-nobg.png" />
+    <Content Include="images\logo_v4.png" />
+    <Content Include="includes\css\bootstrap-glyphicons.css" />
+    <Content Include="includes\css\font-awesome.min.css" />
+    <Content Include="includes\css\styles.css" />
+    <Content Include="includes\fonts\fontawesome-webfont.eot" />
+    <Content Include="includes\fonts\fontawesome-webfont.svg" />
+    <Content Include="includes\fonts\fontawesome-webfont.ttf" />
+    <Content Include="includes\fonts\fontawesome-webfont.woff" />
+    <Content Include="includes\fonts\FontAwesome.otf" />
+    <Content Include="includes\fonts\glyphiconshalflings-regular.eot" />
+    <Content Include="includes\fonts\glyphiconshalflings-regular.otf" />
+    <Content Include="includes\fonts\glyphiconshalflings-regular.svg" />
+    <Content Include="includes\fonts\glyphiconshalflings-regular.ttf" />
+    <Content Include="includes\fonts\glyphiconshalflings-regular.woff" />
+    <Content Include="index.html" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bootstrap\" />
+    <Folder Include="bootstrap\css\" />
+    <Folder Include="bootstrap\js\" />
+    <Folder Include="forms\" />
+    <Folder Include="forms\obj\" />
+    <Folder Include="forms\obj\Debug\" />
+    <Folder Include="forms\styles\" />
+    <Folder Include="images\" />
+    <Folder Include="includes\" />
+    <Folder Include="includes\css\" />
+    <Folder Include="includes\fonts\" />
+    <Folder Include="includes\js\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>

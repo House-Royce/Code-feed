@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title></title>
+    <meta name="description" content="">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="includes/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="includes/css/styles.css" rel="stylesheet">
+
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container" id="main">
+
+        <!-- main navigation -->
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container">
+
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="/">Code Review Project</a>
+
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Languages <strong class="caret"></strong></a>
+                            <ul class="dropdown-menu languages">
+
+                                <li><a href="#">C#</a></li>
+                                <li><a href="#">Java</a></li>
+                                <li><a href="#">PHP</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">Others</a></li>
+
+                            </ul><!-- end dropdown-menu -->
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <strong class="caret"></strong></a>
+                            <ul class="dropdown-menu categories">
+
+                                <li><a href="#">Bug Fix</a></li>
+                                <li><a href="#">Improvement</a></li>
+                                <li><a href="#">Optimization</a></li>
+                                <li><a href="#">What Next</a></li>
+                                <li><a href="#">Govnocode</a></li>
+                                <li><a href="#">All</a></li>
+
+                            </ul><!-- end dropdown-menu -->
+                        </li>
+                    </ul>
+
+                    <form class="navbar-form pull-left">
+                        <input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                    </form><!-- end navbar-form -->
+
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-wrench"></span> Profile</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-question-sign"></span> Asked Questions</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-ok-circle"></span> Answers</a>
+                                </li>
+
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul><!-- end nav pull-right -->
+                </div><!-- end nav-collapse -->
+            </div><!-- end container -->
+        </div><!-- end main navigation -->
+        <!-- panel bigCallout -->
+        <div class="row" id="bigCallout">
+
+            <div class="col-4 pull-left">
+                <a href=""><img class="logo-large img" src="images/logo-nobg.png" alt="logocodereview" /></a>
+            </div><!-- end col-4 logo-large -->
+
+            <div class="col-8">
+                <div class=" alert alert-block alert-success fade in" id="successAlert">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+
+                    <h4>Success!</h4>
+                    <p>This element displays using jQuery.This element displays using jQuery.This element displays using jQuery.This element displays using jQuery. Click X</p>
+
+                </div><!-- end alert-->
+
+                <div class="well">
+                    <div class="page-header">
+                        <h1>Take a look <small>Ask or Answer</small></h1>
+                    </div><!-- end page-header -->
+                    <p class="lead">Leading paragraph</p>
+                    <a href="" class="btn btn-primary btn-large" id="alertMe">Click to Success</a>
+                    <a href="" class="btn btn-primary btn-small">Small</a>
+                    <a href="" class="btn btn-primary">Normal</a>
+                </div><!-- end well -->
+
+            </div><!-- end col-8 -->
+
+        </div><!-- end bigCallout -->
+        <!-- mainContent -->
+        <div class="row" id="mainContent">
+
+            <!-- nav left -->
+            <div class="col-2 marginTop" id="navLeft">
+
+                <div class="well well-small panel">
+                    <div class="list-group">
+                        <div class="list-group-item active menuHeader">
+                            Languages
+                        </div>
+                        <a href="#" class="list-group-item">C#</a>
+                        <a href="#" class="list-group-item">Java</a>
+                        <a href="#" class="list-group-item">PHP</a>
+                        <a href="#" class="list-group-item">JavaScript</a>
+                        <a href="#" class="list-group-item">Html</a>
+                        <a href="#" class="list-group-item">CSS</a>
+                        <a href="#" class="list-group-item">Others</a>
+                    </div>
+                </div>
+
+                <!-- tag clould panel-->
+                <div class="well well-small panel">
+
+                    <div class="panel">
+                        <div class="panel-heading menuHeader">
+                            <h3 class="panel-title">Tags</h3>
+                        </div>
+                        <div class="panel-body">
+
+                            <span class="tag label label-default"><a href="#">C#</a></span>
+                            <span class="tag label label-default"><a href="#">Java</a></span>
+                            <span class="tag label label-default"><a href="#">PHP</a></span>
+                            <span class="tag label label-default"><a href="#">JavaScript</a></span>
+                            <span class="tag label label-default"><a href="#">Html</a></span>
+                            <span class="tag label label-default"><a href="#">CSS</a></span>
+                            <span class="tag label label-default"><a href="#">Others</a></span>
+                            <span class="tag label label-default"><a href="#">Bug Fix</a></span>
+                            <span class="tag label label-default"><a href="#">Improvement</a></span>
+                            <span class="tag label label-default"><a href="#">Optimization</a></span>
+                            <span class="tag label label-default"><a href="#">What Next</a></span>
+                            <span class="tag label label-default"><a href="#">Govnocode</a></span>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div><!-- end navLeft-->
+            <!-- main list of all-languages-questions-list -->
+            <div class="col-7 well well-small marginTop" id="allLangQuestionsList">
+
+                <!-- first question example-->
+                <div class="list-group">
+
+                    <a href="#" class="list-group-item">
+                        <div>
+                            <h4 class="list-group-item-heading">
+                                <span class="label label-info">Java</span>
+                                List group item heading
+                            </h4>
+
+                            <p class="list-group-item-text hidden-xs">
+                                <span>By: @username</span>
+                                <span class="badge">datetime-local</span>
+
+                                <span class="label label-default hidden-xs">Tag</span>
+                                <span class="label label-default hidden-xs">Tag</span>
+                                <span class="label label-default hidden-xs">Tag</span>
+
+                                <span>Last: @username</span>
+                                <span class="badge">datetime-local</span>
+                            </p>
+                            <span class="btn btn-warning btn-small list-group-item-heading votesAnswersViews">
+                                <span>votes</span> &#124;
+                                <span>answers</span> &#124;
+                                <span>views</span>
+                            </span>
+                        </div>
+                    </a>
+
+                </div><!-- end first question example allLangQuestionsList -->
+
+                <div class="list-group">
+
+                    <a href="#" class="list-group-item">
+                        <div>
+                            <h4 class="list-group-item-heading">
+                                <span class="label label-info">C#</span>
+                                List group item heading
+                            </h4>
+
+                            <p class="list-group-item-text hidden-xs">
+                                <span>By: @username</span>
+                                <span class="badge">datetime-local</span>
+
+                                <span class="label label-default hidden-xs">Tag</span>
+                                <span class="label label-default hidden-xs">Tag</span>
+                                <span class="label label-default hidden-xs">Tag</span>
+
+                                <span>Last: @username</span>
+                                <span class="badge">datetime-local</span>
+                            </p>
+                            <span class="btn btn-warning btn-small list-group-item-heading votesAnswersViews">
+                                <span>votes</span> &#124;
+                                <span>answers</span> &#124;
+                                <span>views</span>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+
+
+                <div class="list-group">
+
+                    <a href="#" class="list-group-item">
+                        <div>
+                            <h4 class="list-group-item-heading">
+                                <span class="label label-info">C#</span>
+                                List group item heading
+                            </h4>
+
+                            <p class="list-group-item-text hidden-xs">
+                                <span>By: @username</span>
+                                <span class="badge">datetime-local</span>
+
+                                <span class="label label-default hidden-xs">Tag</span>
+                                <span class="label label-default hidden-xs">Tag</span>
+                                <span class="label label-default hidden-xs">Tag</span>
+
+                                <span>Last: @username</span>
+                                <span class="badge">datetime-local</span>
+                            </p>
+                            <span class="btn btn-warning btn-small list-group-item-heading votesAnswersViews">
+                                <span>votes</span> &#124;
+                                <span>answers</span> &#124;
+                                <span>views</span>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+
+
+                <div class="list-group">
+
+                    <a href="#" class="list-group-item">
+                        <div>
+                            <h4 class="list-group-item-heading">
+                                <span class="label label-info">PHP</span>
+                                List group item heading
+                            </h4>
+
+                            <p class="list-group-item-text hidden-xs">
+                                <span>By: @username</span>
+                                <span class="badge">datetime-local</span>
+
+                                <span class="label label-default hidden-xs">Tag</span>
+                                <span class="label label-default hidden-xs">Tag</span>
+                                <span class="label label-default hidden-xs">Tag</span>
+
+                                <span>Last: @username</span>
+                                <span class="badge">datetime-local</span>
+                            </p>
+                            <span class="btn btn-warning btn-small list-group-item-heading votesAnswersViews">
+                                <span>votes</span> &#124;
+                                <span>answers</span> &#124;
+                                <span>views</span>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+
+
+                <div class="list-group">
+
+                    <a href="#" class="list-group-item">
+                        <div>
+                            <h4 class="list-group-item-heading">
+                                <span class="label label-info">C#</span>
+                                List group item heading
+                            </h4>
+
+                            <p class="list-group-item-text hidden-xs">
+                                <span>By: @username</span>
+                                <span class="badge">datetime-local</span>
+
+                                <span class="label label-default hidden-xs">Tag</span>
+                                <span class="label label-default hidden-xs">Tag</span>
+                                <span class="label label-default hidden-xs">Tag</span>
+
+                                <span>Last: @username</span>
+                                <span class="badge">datetime-local</span>
+                            </p>
+                            <span class="btn btn-warning btn-small list-group-item-heading votesAnswersViews">
+                                <span>votes</span> &#124;
+                                <span>answers</span> &#124;
+                                <span>views</span>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+
+
+                <div class="list-group">
+
+                    <a href="#" class="list-group-item">
+                        <div>
+                            <h4 class="list-group-item-heading">
+                                <span class="label label-info">JavaScript</span>
+                                List group item heading
+                            </h4>
+
+                            <p class="list-group-item-text hidden-xs">
+                                <span>By: @username</span>
+                                <span class="badge">datetime-local</span>
+
+                                <span class="label label-default hidden-xs">Tag</span>
+                                <span class="label label-default hidden-xs">Tag</span>
+                                <span class="label label-default hidden-xs">Tag</span>
+
+                                <span>Last: @username</span>
+                                <span class="badge">datetime-local</span>
+                            </p>
+                            <span class="btn btn-warning btn-small list-group-item-heading votesAnswersViews">
+                                <span>votes</span> &#124;
+                                <span>answers</span> &#124;
+                                <span>views</span>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+
+
+                <div class="list-group">
+
+                    <a href="#" class="list-group-item">
+                        <div>
+                            <h4 class="list-group-item-heading">
+                                <span class="label label-info">C#</span>
+                                List group item heading
+                            </h4>
+
+                            <p class="list-group-item-text hidden-xs">
+                                <span>By: @username</span>
+                                <span class="badge">datetime-local</span>
+
+                                <span class="label label-default hidden-xs">Tag</span>
+                                <span class="label label-default hidden-xs">Tag</span>
+                                <span class="label label-default hidden-xs">Tag</span>
+
+                                <span>Last: @username</span>
+                                <span class="badge">datetime-local</span>
+                            </p>
+                            <span class="btn btn-warning btn-small list-group-item-heading votesAnswersViews">
+                                <span>votes</span> &#124;
+                                <span>answers</span> &#124;
+                                <span>views</span>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div><!-- end allQuestionN-->
+            <!--nav right -->
+            <div class="col-3 marginTop" id="navRight">
+                <div class="well well-small panel">
+
+                    <div class="panel panel-default">
+
+                        <!-- title -->
+                        <div class="panel-heading menuHeader">Most active members</div>
+                        <table class="table panelMostActiveMembers">
+                            <tr><th>Name</th><th>Answers</th><th>Best</th></tr>
+                            <tr><td><a href="">@username</a></td><td>222</td><td>31</td></tr>
+                            <tr><td><a href="">@username</a></td><td>222</td><td>31</td></tr>
+                            <tr><td><a href="">@username</a></td><td>222</td><td>31</td></tr>
+                            <tr><td><a href="">@username</a></td><td>222</td><td>31</td></tr>
+                            <tr><td><a href="">@username</a></td><td>222</td><td>31</td></tr>
+                            <tr><td><a href="">@username</a></td><td>222</td><td>31</td></tr>
+                            <tr><td><a href="">@username</a></td><td>222</td><td>31</td></tr>
+                            <tr><td><a href="">@username</a></td><td>222</td><td>31</td></tr>
+                            <tr><td><a href="">@username</a></td><td>222</td><td>31</td></tr>
+                            <tr><td><a href="">@username</a></td><td>222</td><td>31</td></tr>
+                        </table>
+                        <!-- body -->
+
+                    </div>
+
+                </div><!-- send well well-small -->
+            </div><!-- end navRight -->
+
+        </div><!-- end mainContent -->
+
+    </div><!-- end container -->
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h6>
+                        <a href="#">
+                            <img src="images/logo-nobg.png" alt="logo_code" class="footer-logo" />
+                        </a>
+                    </h6>
+                </div>
+
+                <div class="col-sm-3">
+                    <h6>About Us</h6>
+                    <p>Hi, there! We are the House-Royce. We are a team of students at the Software University. With this project we hope to help our mates and friends to achieve thier goals in better way. Enjoy!</p>
+                </div>
+
+                <div class="col-sm-2">
+                    <h6>Navigation</h6>
+                    <ul class="navbar">
+                        <li><a href=" #">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Langusges</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3">
+                    <h6 class="">Powered By Houce-Royce @2014</h6>
+                    <ul class="list-inline">
+                        <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+                    </ul>
+                    <ul class="list-block">
+                        <li>The Code Review Project</li>
+                        <li>Copyright &copy; 2014</li>
+                        <li>House-Royce Team</li>
+                    </ul>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+    <!-- First try for the online version of jQuery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="includes/js/script.js"></script>
+
+</body>
+</html>

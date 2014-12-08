@@ -1,0 +1,286 @@
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+
+.navbar {
+    background-color: #2c3e50;
+}
+
+.navbar-nav {
+    color: #ffffff;
+    background-color: #2c3e50;
+}
+
+    .navbar-nav:hover {
+        color: #ffffff;
+        background-color: #2c3e50;
+    }
+
+    .navbar-nav > .active > a,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus {
+        color: #ffffff;
+        background-color: #2c3e50;
+        background-color: rgba(255, 255, 255, 0.19);
+    }
+
+    .navbar-nav > .open > a,
+    .navbar-nav > .open > a:hover,
+    .navbar-nav > .open > a:focus {
+        color: #2c3e50;
+        background-color: #ffffff;
+    }
+
+    .navbar-nav > li > a,
+    .navbar-nav > li > a:hover,
+    .navbar-nav > li > a:focus {
+        color: #ffffff;
+    }
+
+    .navbar-nav > .dropdown > a .caret,
+    .navbar-nav > .dropdown > a .caret:hover,
+    .navbar-nav > .dropdown > a .caret:focus {
+        border-top-color: #ffffff;
+        border-bottom-color: #ffffff;
+    }
+
+.navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+
+button.navbar-toggle.collapsed {
+    color: #ffffff;
+}
+
+button.btn-default {
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active {
+    background-color: #2c3e50;
+    background-color: rgba(255, 255, 255, 0.19);
+    border-color: transparent;
+}
+
+
+img {
+    height: 1.5em;
+    padding: 0;
+    background-color: transparent;
+}
+
+    img.logo-large {
+        height: 200px;
+        margin-top: 26px;
+    }
+
+ul.unstyled {
+    list-style: none;
+}
+
+
+#searchInput {
+    width: 200px;
+}
+
+.navbar-brand {
+    padding: 13px 15px;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+div#mainContent.row .marginTop {
+    margin-top: 0;
+}
+
+    div#mainContent.row .marginTop .well {
+        margin-top: 0;
+    }
+
+#bigCallout {
+    margin-top: 54px;
+}
+
+.well .page-header {
+    margin-top: 0;
+}
+
+    .well .page-header h1 {
+        margin-top: 0;
+    }
+
+.alert {
+    margin-top: 20px;
+    display: none;
+}
+
+.well {
+    margin: 20px 0;
+}
+
+.tag {
+    background-color: deepskyblue;
+}
+
+.tag a {
+    color: #ffffff;
+}
+
+.tag a:hover {
+    text-decoration: none;
+}
+
+/* list group */
+a.list-group-item {
+    color: #2c3e50;
+}
+
+#allLangQuestionsList .list-group {
+    margin-bottom: 8px;
+}
+
+#allLangQuestionsList .list-group-item {
+    padding: 10px;
+}
+
+#allLangQuestionsList .list-group-item-heading {
+    padding-left: 0;
+    padding-right: 135px;
+}
+
+#allLangQuestionsList .list-group-item-text {
+    font-size: 0.8em;
+}
+
+#allLangQuestionsList p.list-group-item-text {
+    margin-top: 12px;
+}
+
+#allLangQuestionsList .votesAnswersViews {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 3px 5px;
+    color: #ffffff;
+}
+
+ul.panelMostActiveMembers {
+    font-size: 0.8em;
+    margin-left: -58px;
+    list-style-type: none;
+}
+
+    ul.panelMostActiveMembers p span {
+        font-weight: bold;
+        padding-left: 25px;
+        padding-right: 1px;
+    }
+
+.tabbable img.thumbnail {
+    margin: 0 20px 10px 0;
+}
+
+.thumbnails {
+    margin: 20px 0;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+    .thumbnail h3 {
+        font-size: 16px;
+        margin: 0 0 10px;
+        line-height: 20px;
+    }
+
+    .thumbnail .price {
+        font-size: 22px;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        padding: 10px;
+    }
+
+        .thumbnail .price sup {
+            font-weight: normal;
+            font-size: 12px;
+        }
+
+    .thumbnail span.glyphicon {
+        margin-right: 5px;
+    }
+
+.menuHeader {
+    color: #ffffff;
+    background-color: #2c3e50;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 20px;
+    background: #2c3e50;
+    color: #ffffff;
+    font-size: 11px;
+}
+
+    footer ul {
+        list-style-type: none;
+    }
+
+        footer ul.navbar {
+            background-color: transparent;
+        }
+
+    footer a {
+        color: #999999;
+    }
+
+        footer a:hover,
+        footer a:focus {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+    footer .list-block {
+        display: block;
+        margin-left: -40px;
+    }
+
+    img.footer-logo {
+        padding-left: 40px;
+    }
+.footer-logo {
+    height: 160px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    padding: 2px;
+}
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+
+    .thumbnail .price {
+        font-size: 14px;
+    }
+
+        .thumbnail .price sup {
+            font-size: 10px;
+        }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "CodeReview",
+  "version": "0.0.0",
+  "description": "CodeReview",
+  "main": "app.js",
+  "author": {
+    "name": "HP",
+    "email": ""
+  }
+}
