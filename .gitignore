@@ -15,7 +15,6 @@ Thumbs.db
 
 # Folders to ignore
 node_modules
-bootstrap
 local-files
 
 ## Ignore Visual Studio temporary files, build results, and
