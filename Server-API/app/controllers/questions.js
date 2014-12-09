@@ -48,21 +48,17 @@ exports.new = function (req, res){
 
 exports.create = function (req, res) {
   var question = new Question(req.body);
-  var images = req.files.image
-    ? [req.files.image]
-    : undefined;
   question.user = req.user;
-  question.uploadAndSave(images, function (err) {
-    if (!err) {
-      req.flash('success', 'Successfully created question!');
-      return res.redirect('/questions/'+question._id);
+  question.save(function (err) {
+    if (err) {
+      console.log(err);
+    } else {
+      res.send({
+        title: 'New Question',
+        question: question,
+        errors: utils.errors(err.errors || err)
+      });
     }
-    console.log(err);
-    res.send({
-      title: 'New Question',
-      question: question,
-      errors: utils.errors(err.errors || err)
-    });
   });
 };
 

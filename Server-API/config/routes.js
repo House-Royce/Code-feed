@@ -12,21 +12,18 @@ var commentAuth = [auth.requiresLogin, auth.comment.hasAuthorization];
 
 module.exports = function (app, passport) {
   // user routes
-  app.get('/login', users.login);
-  app.get('/signup', users.signup);
   app.get('/logout', users.logout);
   app.post('/users', users.create);
   app.get('/users/:userId', users.show);
 
-  app.post('/users/session',
+  app.post('/login',
     passport.authenticate('local', {
-      failureRedirect: '/login',
-      failureFlash: 'Invalid email or password.'
+      failureRedirect: 'session'
     }), users.session);
   app.get('/auth/facebook',
     passport.authenticate('facebook', {
       scope: [ 'email', 'user_about_me'],
-      failureRedirect: '/login'
+      failureRedirect: '/users'
     }), users.signin);
   app.get('/auth/facebook/callback',
     passport.authenticate('facebook', {
@@ -100,7 +97,7 @@ module.exports = function (app, passport) {
 
   // assume 404 since no middleware responded
   app.use(function (req, res, next) {
-    res.status(404).send('404', {
+    res.status(404).send({
       url: req.originalUrl,
       error: 'Not found'
     });

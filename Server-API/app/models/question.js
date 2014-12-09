@@ -14,13 +14,20 @@ var setTags = function (tags) {
 };
 
 var QuestionSchema = new Schema({
-  title: {type : String, default : '', trim : true},
-  body: {type : String, default : '', trim : true},
+  title: {type : String, trim : true},
+  language: {type: String, required: true},
+  category: {type: String, required: true},
+  votes: {type: Number, default: 0},
+  body: {type : String, trim : true},
+  code: {type : String, trim : true},
   user: {type : Schema.ObjectId, ref : 'User'},
   comments: [{
-    body: { type : String, default : '' },
+    votes: {type: Number, default: 0},
+    line: {type: Number, default: 0},
+    body: { type : String, required: true },
     user: { type : Schema.ObjectId, ref : 'User' },
-    createdAt: { type : Date, default : Date.now }
+    createdAt: { type : Date, default : Date.now },
+    tags: {type: [], get: getTags, set: setTags}
   }],
   tags: {type: [], get: getTags, set: setTags},
   createdAt  : {type : Date, default : Date.now}
@@ -29,24 +36,14 @@ var QuestionSchema = new Schema({
  // Validations
 QuestionSchema.path('title').required(true, 'Question title cannot be blank');
 QuestionSchema.path('body').required(true, 'Question body cannot be blank');
+QuestionSchema.path('code').required(true, 'You can\'t ask for feedback with no code');
 
 // Methods
 QuestionSchema.methods = {
   addComment: function (user, comment, cb) {
-    var notify = require('../mailer');
-
     this.comments.push({
       body: comment.body,
       user: user._id
-    });
-
-    if (!this.user.email) {
-      this.user.email = 'email@product.com';
-    }
-    notify.comment({
-      question: this,
-      currentUser: user,
-      comment: comment.body
     });
 
     this.save(cb);

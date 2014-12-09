@@ -28,8 +28,8 @@ exports.create = function (req, res) {
 
     // manually login the user once successfully signed up
     req.logIn(user, function(err) {
-      if (err) req.flash('info', 'Sorry! We are not able to log you in!');
-      return res.redirect('/');
+      if (err) req.send('info', 'Sorry! We are not able to log you in!');
+      return res.send(user._id);
     });
   });
 };
@@ -44,11 +44,6 @@ exports.show = function (req, res) {
 
 exports.signin = function (req, res) {};
 exports.authCallback = login;
-exports.login = function (req, res) {
-  res.send({
-    title: 'Login'
-  });
-};
 exports.signup = function (req, res) {
   res.send({
     title: 'Sign up',
@@ -58,13 +53,12 @@ exports.signup = function (req, res) {
 
 exports.logout = function (req, res) {
   req.logout();
-  res.redirect('/login');
+  res.statusCode(200);
 };
 
 exports.session = login;
 
 function login (req, res) {
-  var redirectTo = req.session.returnTo ? req.session.returnTo : '/';
   delete req.session.returnTo;
-  res.redirect(redirectTo);
+  res.redirect('/users/' + req.user._id);
 }
