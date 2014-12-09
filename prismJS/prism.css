@@ -1,4 +1,4 @@
-/* http://prismjs.com/download.html?themes=prism-coy&languages=markup+twig+css+css-extras+clike+javascript+java+php+php-extras+coffeescript+scss+bash+c+cpp+python+sql+groovy+http+ruby+rip+gherkin+csharp+go+nsis+aspnet+scala+haskell+swift+objectivec+autohotkey+ini+latex+apacheconf+git+scheme+nasm&plugins=line-highlight+line-numbers+show-invisibles+autolinker+wpd+file-highlight+show-language */
+/* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+java+php+sql+http+csharp+aspnet&plugins=line-numbers */
 /**
  * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
@@ -210,53 +210,6 @@ pre[class*="language-"].line-numbers .line-numbers-rows {
 	left: 0;
 }
 
-pre[data-line] {
-	position: relative;
-	padding: 1em 0 1em 3em;
-}
-
-.line-highlight {
-	position: absolute;
-	left: 0;
-	right: 0;
-	padding: inherit 0;
-	margin-top: 1em; /* Same as .prism’s padding-top */
-
-	background: hsla(24, 20%, 50%,.08);
-	background: -moz-linear-gradient(left, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-	background: -webkit-linear-gradient(left, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-	background: -o-linear-gradient(left, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-	background: linear-gradient(left, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-	
-	pointer-events: none;
-	
-	line-height: inherit;
-	white-space: pre;
-}
-
-	.line-highlight:before,
-	.line-highlight[data-end]:after {
-		content: attr(data-start);
-		position: absolute;
-		top: .4em;
-		left: .6em;
-		min-width: 1em;
-		padding: 0 .5em;
-		background-color: hsla(24, 20%, 50%,.4);
-		color: hsl(24, 20%, 95%);
-		font: bold 65%/1.5 sans-serif;
-		text-align: center;
-		vertical-align: .3em;
-		border-radius: 999px;
-		text-shadow: none;
-		box-shadow: 0 1px white;
-	}
-	
-	.line-highlight[data-end]:after {
-		content: attr(data-end);
-		top: auto;
-		bottom: .4em;
-	}
 pre.line-numbers {
 	position: relative;
 	padding-left: 3.8em;
@@ -297,55 +250,3 @@ pre.line-numbers > code {
 			padding-right: 0.8em;
 			text-align: right;
 		}
-.token.tab:not(:empty):before,
-.token.cr:before,
-.token.lf:before {
-	color: hsl(24, 20%, 85%);
-}
-
-.token.tab:not(:empty):before {
-	content: '▸';
-}
-
-.token.cr:before {
-	content: '␍';
-}
-
-.token.lf:before {
-	content: '␊';
-}
-.token a {
-	color: inherit;
-}
-code[class*="language-"] a[href],
-pre[class*="language-"] a[href] {
-	cursor: help;
-	text-decoration: none;
-}
-
-code[class*="language-"] a[href]:hover,
-pre[class*="language-"] a[href]:hover {
-	cursor: help;
-	text-decoration: underline;
-}
-pre[class*='language-'] {
-	position: relative;
-}
-pre[class*='language-'] > code[data-language] {
-	overflow: scroll;
-	max-height: 28em;
-	display: block;
-}
-pre[class*='language-'] > code[data-language]::before {
-	content: attr(data-language);
-	color: black;
-	background-color: #CFCFCF;
-	display: inline-block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	font-size: 0.9em;
-	border-radius: 0 0 0 5px;
-	padding: 0 0.5em;
-	text-shadow: none;
-}
