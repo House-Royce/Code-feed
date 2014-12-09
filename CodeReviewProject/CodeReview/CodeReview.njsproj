@@ -44,6 +44,7 @@
     <Content Include="forms\formRegister.html" />
     <Content Include="forms\styles\bootstrap.css" />
     <Content Include="forms\styles\bootstrap.min.css" />
+    <Content Include="forms\styles\form-askQuestion-style.css" />
     <Content Include="forms\styles\form-style.css" />
     <Content Include="images\logo-nobckgrnd.png" />
     <Content Include="images\logo-nobg.png" />

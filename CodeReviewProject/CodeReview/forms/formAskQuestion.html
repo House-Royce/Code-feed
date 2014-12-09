@@ -2,73 +2,274 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link href="styles/bootstrap.css" rel="stylesheet" />
-    <link href="styles/form-style.css" rel="stylesheet" />
+
+    <!-- Website Title & Description for Search Engine purposes -->
     <title></title>
+    <meta name="description" content="">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="../includes/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="../includes/css/styles.css" rel="stylesheet">
+    <link href="styles/form-askQuestion-style.css" rel="stylesheet" />
+
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="../includes/js/modernizr-2.6.2.min.js"></script>
+
 </head>
 <body>
-    <div class="row form-position"> </div>
-    <div class="row">
-        <div class="col-lg-4 col-sm-4 col-xs-12"> </div>
-        <div class="col-lg-4 col-sm-4 col-xs-12 modal-content form-padding">
+
+    <div class="container" id="main">
+
+        <!-- main navigation -->
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container">
+
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="/">Code Review Project</a>
+
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Languages <strong class="caret"></strong></a>
+                            <ul class="dropdown-menu languages">
+
+                                <li><a href="#">C#</a></li>
+                                <li><a href="#">Java</a></li>
+                                <li><a href="#">PHP</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">Others</a></li>
+
+                            </ul><!-- end dropdown-menu -->
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <strong class="caret"></strong></a>
+                            <ul class="dropdown-menu categories">
+
+                                <li><a href="#">Bug Fix</a></li>
+                                <li><a href="#">Improvement</a></li>
+                                <li><a href="#">Optimization</a></li>
+                                <li><a href="#">What Next</a></li>
+                                <li><a href="#">Govnocode</a></li>
+                                <li><a href="#">All</a></li>
+
+                            </ul><!-- end dropdown-menu -->
+                        </li>
+                    </ul>
+
+                    <form class="navbar-form pull-left">
+                        <input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                    </form><!-- end navbar-form -->
+
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-wrench"></span> Profile</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-question-sign"></span> Asked Questions</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-ok-circle"></span> Answers</a>
+                                </li>
+
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul><!-- end nav pull-right -->
+                </div><!-- end nav-collapse -->
+            </div><!-- end container -->
+        </div><!-- end main navigation -->
+        <!-- main content ask form -->
+        <div class="container">
+            <div class="row firstContainerRow">
+                <div class="col-12 modal-content form-padding">
 
 
-            <div class="form-group well col-md-12">
-                <form class="form-horizontal">
-                    <fieldset>
+                    <div class="form-group well col-md-12 clearfix">
+
+                        <!-- left form -->
+                        <form class="col-lg-5 form-horizontal pull-left">
+                            <fieldset>
 
 
-                        <legend>Registration</legend>
-                        <div class="form-group">
-                            <label for="inputEmail" class="col-lg-3 control-label">Email</label>
-                            <div class="col-lg-9">
-                                <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-                            </div>
-                        </div>
+                                <legend>Fill the question details</legend>
 
-                        <div class="form-group">
-                            <label for="inputUserName" class="col-lg-3 control-label">User</label>
-                            <div class="col-lg-9">
-                                <input type="text" class="form-control" id="inputUserName" placeholder="User name">
-                            </div>
-                        </div>
+                                <!-- title -->
+                                <div class="form-group">
+                                    <label for="inputTitle" class="col-lg-3 control-label">Title</label>
+                                    <div class="col-lg-9">
+                                        <input type="text" class="form-control" id="inputTitle" placeholder="">
+                                    </div>
+                                </div>
 
-                        <div class="form-group">
-                            <label for="inputPassword" class="col-lg-3 control-label">Password</label>
-                            <div class="col-lg-9">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="inputRepeatPassword" class="col-lg-3 control-label">Repeat</label>
-                            <div class="col-lg-9">
-                                <input type="password" class="form-control" id="inputRepeatPassword" placeholder="Repeat password">
-                            </div>
-                        </div>
-                        
-                        <!-- buttons cancel and send -->
-                        <div class="form-group">
-                            <div class="col-lg-6 col-lg-offset-6">
-                                <button class="btn btn-default">Cancel</button>
-                                <button type="submit" class="btn btn-primary">Register</button>
-                            </div>
-                        </div>
+                                <!-- question -->
+                                <div class="form-group">
+                                    <label for="askQuestionText" class="col-lg-3 control-label">Question</label>
+                                    <div class="col-lg-9">
+                                        <textarea class="form-control" rows="6" id="askQuestionText"></textarea>
+                                    </div>
+                                </div>
 
 
-                    </fieldset>
-                </form>
+                                <div class="form-group">
+                                    <label for="askQuestionLang" class="col-lg-3">Languages</label>
+                                    <div class="col-lg-9" id="askQuestionLang">
+                                        <a href="#"><span class="tag label label-primary">C#</span></a>
+                                        <a href="#"><span class="tag label label-primary">Java</span></a>
+                                        <a href="#"><span class="tag label label-primary">PHP</span></a>
+                                        <a href="#"><span class="tag label label-primary">JavaScript</span></a>
+                                        <a href="#"><span class="tag label label-primary">Html</span></a>
+                                        <a href="#"><span class="tag label label-primary">CSS</span></a>
+                                        <a href="#"><span class="tag label label-primary">Others</span></a>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="askQuestionCategorie" class="col-lg-3">Categories</label>
+                                    <div class="col-lg-9" id="askQuestionCategorie">
+                                        <a href="#"><span class="tag label label-default">Bug Fix</span></a>
+                                        <a href="#"><span class="tag label label-default">Improvement</span></a>
+                                        <a href="#"><span class="tag label label-default">Optimization</span></a>
+                                        <a href="#"><span class="tag label label-default">What Next</span></a>
+                                        <a href="#"><span class="tag label label-default">Govnocode</span></a>
+                                    </div>
+                                </div>
+                                
+                                <!-- more tags -->
+                                <div class="form-group">
+                                    <label for="moreTags" class="col-lg-3 control-label">Question</label>
+                                    <div class="col-lg-9">
+                                        <textarea class="form-control" rows="1" id="moreTags"></textarea>
+                                        <span class="help-block">Add more tags separated by comma.</span>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form><!-- end left form -->
+                        <!-- right form textarea -->
+                        <form class="col-lg-7 form-horizontal pull-right">
+                            <fieldset>
+
+                                <legend>Add code</legend>
+                                <div class="form-group">
+                                    <label for="codeQuestionTextArea" class="col-lg-2 control-label">Code</label>
+                                    <div class="col-lg-10">
+                                        <textarea class="form-control" rows="16" id="codeQuestionTextArea"></textarea>
+                                        <span class="help-block"></span>
+                                    </div>
+                                </div>
+
+                                <!-- check box i'm ready -->
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> I am ready
+                                    </label>
+                                </div>
+
+                                <!-- buttons cancel and send -->
+                                <div class="form-group">
+                                    <div class="col-12">
+                                        <button class="btn btn-deff">Cancel</button>
+                                        <button type="submit" class="btn btn-main-color">Submit</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form><!-- end right form textarea -->
+
+
+                    </div>
+
+                </div>
             </div>
 
+        </div> <!-- end container main content-->
+    </div><!-- end container main -->
+    
 
-        </div>
-        <div class="col-lg-4 col-md-4"> </div>
-    </div>
-    <!-- Optional: Include the jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Optional: Incorporate the Bootstrap JavaScript plugins -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h6>
+                        <a href="#">
+                            <img src="../images/logo-nobg.png" alt="logo_code" class="footer-logo" />
+                        </a>
+                    </h6>
+                </div>
+
+                <div class="col-sm-3">
+                    <h6>About Us</h6>
+                    <p>Hi, there! We are the House-Royce. We are a team of students at the Software University. With this project we hope to help our mates and friends to achieve thier goals in better way. Enjoy!</p>
+                </div>
+
+                <div class="col-sm-2">
+                    <h6>Navigation</h6>
+                    <ul class="navbar">
+                        <li><a href=" #">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Langusges</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3">
+                    <h6 class="">Powered By Houce-Royce @2014</h6>
+                    <ul class="list-inline">
+                        <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+                    </ul>
+                    <ul class="list-block">
+                        <li>The Code Review Project</li>
+                        <li>Copyright &copy; 2014</li>
+                        <li>House-Royce Team</li>
+                    </ul>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+    <!-- First try for the online version of jQuery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+    <!-- Bootstrap JS -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../includes/js/script.js"></script>
+
 </body>
 </html>
