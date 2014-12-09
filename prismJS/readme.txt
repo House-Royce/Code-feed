@@ -6,3 +6,10 @@ instructions for PrismJS Syntax Highlighter
 	3.1 class="line-numbers"
 	3.2 (optional future option)data-line-offset = "x" will set the first line to be x+1. If x is negative, first line is -x, but it will go to zero and then to 1. 
 4. <code> must have the attribute class='language-languageName', where languaGename is the name of the language it's supposed to highlight. If you have lots of code snippets of the same name, you can put the class attrubute in a parent element (e.g. <body>) then it will mark all following languages in the same way.
+
+Will in the morning: Play with the styles. It needs quite a lot of styling to look good.
+Maybe I can try a different theme. 
+
+These changes should be done:
+So far: pre[class*="language-"] -> max-height: 15em; 
+code[class*="language"] -> display:inline-block;

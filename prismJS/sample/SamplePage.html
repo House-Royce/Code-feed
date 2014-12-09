@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Test</title>
+    <!--<link href="style.css" rel="stylesheet" />-->
+    <link href="Prism/prism.css" rel="stylesheet" />
+    <script src="Prism/prism.js" defer=""></script>
+</head>
+<body >
+    <!--<a href="#current-code.2-4" rel="stylesheet">current-code(5:6)</a>-->
+
+    <!--<div id="code-body">-->
+<pre class="line-numbers">
+    <code class="language-javascript">
+        { color: red }
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, w, h);
+        ctx.strokeStyle = "black";
+        ctx.strokeRect(0, 0, w, h);
+
+        ctxScore.fillStyle = "black";
+        ctxScore.fillRect(0, 0, wSc, hSc);
+        ctxScore.strokeStyle = "black";
+        ctxScore.strokeRect(0, 0, wSc, hSc);
+
+        function Point(x, y) {
+        this.x = x;
+        this.y = y;
+        }
+
+        function obstaclesArray(w, h, difficulty) {
+        //            initialization and execution
+        var arrayOfObstacles = [];
+        createBorders(w, h);
+        switch (difficulty) {
+        case 'easy':
+        break;
+        case 'medium':
+        createPredefinedObstacles();
+        break;
+        case 'hard':
+        createScatteredSquareObstacles();
+        break;
+        }
+
+        //            functions definition
+
+        function createBorders(w, h) {
+        for (var i = 0; i < w; i++) {
+        arrayOfObstacles.push(new Point(i, 0));
+        arrayOfObstacles.push(new Point(i, h / 10 - 1))
+        }
+
+        for (var j = 0; j < w; j++) {
+        arrayOfObstacles.push(new Point(0, j));
+        arrayOfObstacles.push(new Point(w / 10 - 1, j))
+        }</code>
+</pre>
+    <!--</div>-->
+</body>
+</html>
